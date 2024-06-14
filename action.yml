@@ -1,13 +1,17 @@
 name: 'Due Dates'
 description: 'Manage due dates on issues'
-author: 'Alex Leventer'
+author: 'TypoMC'
+based_on: 'Due Dates GH action by Alex Leventer'
 inputs:
   GH_TOKEN:
     description: GitHub token used to make API requests
     required: true
+  days-before-due:
+    description: 'Number of days before due date to nofify'
+    required: true
 branding:
-  icon: 'calendar'
-  color: 'purple'
+  icon: 'memo'
+  color: 'white'
 runs:
   using: 'node12'
   main: 'dist/app.js'
